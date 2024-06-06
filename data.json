@@ -1,0 +1,87 @@
+{
+    "background": {
+        "photo": "Table Mountain.jpeg"
+    },
+    
+    "user": {
+        "fullName": "Tebogo Ratshio",
+        "photo": "my-photo.jpg",
+        "city": {
+            "name": "Shenzhen",
+            "photo": "shenzhen-city.jpg",
+            "description": "Shenzhen is a fascinating city that offers a unique blend of modern innovation, historical significance, and natural beauty. Often referred to as China's Silicon Valley, Shenzhen is a city on the rise. It boasts impressive skyscrapers, futuristic architecture, and world-class museums. The city pulsates with a vibrant energy and is a hub of technology and innovation."
+        }
+    },
+    "foreignLanguage": {
+        "language": "Mandarin",
+        "description": "Mandarin can open doors to exciting job prospects in various fields like international business and programming. It can enhance my travel experiences in China and other Mandarian-speaking regions. It can improve my memory, focus, and problem solving skills. Learning Mandarin can be a valuable investment in my personal and professional development. It can broaden my horizons, connect you with new cultures, and even sharpen my cognitive skills",
+        "phrases": [
+            {
+                "englishPhrase": "Hello, how are you?",
+                "foreignLanguage": "Ni hao, ni hao ma?"
+            },
+            {
+                "englishPhrase": "Thank you very much.",
+                "foreignLanguage": "Fēicháng gǎnxiè nǐ."
+            },
+            {
+                "englishPhrase": "You’re welcome.",
+                "foreignLanguage": "Bù kèqì"
+            },
+            {
+                "englishPhrase": "What's your name?",
+                "foreignLanguage": "Nǐ jiào shénme míngzì?"
+            },
+            {
+                "englishPhrase": "Goodbye",
+                "foreignLanguage": "Zàijiàn."
+            }
+        ]
+    },
+    "school":
+    {
+        "courseName": "BCom Honours Information Management",
+        "universityName": "University of Johannesburg",
+        "heading": "Three Favourite Subjects"
+      },
+
+
+
+    "favouriteSubjects": [
+        {
+            "name": "Web and Intranet Management",
+            "photo": "Web and Intranet Management.jpg"
+        },
+        {
+            "name": "Business Intelligence",
+            "photo": "business Intelligence.jpeg"
+        },
+        {
+            "name": "Knowledge Management",
+            "photo": "Knowledge Management.jpg"
+        }
+    ],
+
+    "places": {
+        "place": "Historical places",
+        "historicalPlaces": [
+            {
+                "name": "Constitutional Hill",
+                "description": "By 1904 the Old Fort's prison population had doubled and the “Number Four” prison was erected to hold Black convicted prisoners. The Women's Jail was built around 1910. An underground tunnel connects the prison complexes with the old magistrate's court. The Old Fort was declared a national monument in 1964.",
+                "image": "Constitution-Hill.jpg"
+            },
+            {
+                "name": "Cradle of The Human Kind",
+                "description": "The first stone tools were made and used in Africa, at least 2.6-million years ago. Our ancestors were able to use and control fire at least one million years ago in the Cradle of Humankind. Homo sapiens, the species to which we all belong, evolved in Africa approximately 200 000 years ago.",
+                "image": "Maropeng.jpeg",
+                "classNameImg": "pull-s6",
+                "classNameText": "push-s6"
+            },
+            {
+                "name": "Apartheid Museum",
+                "description": "The Apartheid Museum is the world's only museum about apartheid. It is located at Gold Reef City, south of Johannesburg, South Africa. The museum is seen as a beacon of hope. It shows the world how South Africans overcame the inequality of the past to build a country in which all people enjoy the same rights.",
+                "image": "Apartheid Museum.jpeg"
+            }
+        ]
+    }
+}

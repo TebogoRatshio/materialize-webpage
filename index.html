@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body style="height: 60em; background-color: dodgerblue;(219, 219, 42);">
+    <div class="container">
+        <div class="row valign-wrapper" style="background-image: url({{background.photo}})">
+            <div class="col s8 l10">
+                <h1>{{user.fullName}}</h1>
+            </div>
+
+            <div class="col s8 l4 right">
+                <img class="responsive-image" src={{user.photo}}>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <section class="row">
+            <h2>{{user.city.name}}</h2>
+
+            <div class="col s12 m6 l4">
+                <img src={{user.city.photo}} alt="City Photo" style="width:300px">
+            </div>
+            <div class="col s12 m6 l8">
+                <p>{{user.city.description}}</p>
+            </div>
+            
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>{{foreignLanguage.language}}</h2>
+            <p>{{foreignLanguage.description}}</p>
+
+            <table class="Mytable" border="1">
+                <tr>
+                    <th border="1">{{foreignLanguage.language}}</th>
+                    <th border="1">English</th>
+                </tr>
+                {{#each foreignLanguage.phrases}}
+                <tr>
+                    <td border="1">{{this.foreignLanguage}}</td>
+                    <td border="1">{{this.englishPhrase}}</td>
+                </tr>
+                {{/each}}
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <div>
+                <h3>{{school.courseName}} ({{school.universityName}})</h3>
+                <h2>{{school.heading}}</h2>
+
+                <div class="Favourite-Subjects">
+                    {{#each favouriteSubjects}}
+                    <div>
+                        <h4>{{this.name}}</h4>
+                        <p><img src="{{this.photo}}" style="width:200px"></p>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>{{places.place}}</h3>
+            <div class="row">
+                {{#each places.historicalPlaces}}
+                <div class="col s12 l4">
+                    <h4>{{name}}</h4>
+                    <div class="col s12">
+                        <div class="col s6 {{classNameText}} l6">
+                            {{description}}
+                        </div>
+                        <div class="col s6 {{classNameImg}} l6">
+                            <img class="responsive-image z-depth-4 hoverable" src="{{image}}" style="width:150px">
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+                  
+        </section>
+    </div>
+
+
+</body>
+
+</html>
