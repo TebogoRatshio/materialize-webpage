@@ -68,13 +68,13 @@
         <section>
             <div>
                 <h3>{{school.courseName}} ({{school.universityName}})</h3>
-                <h2>{{school.heading}}</h2>
+                <h3>{{school.heading}}</h3>
 
-                <div class="Favourite-Subjects">
+                <div class="row">
                     {{#each favouriteSubjects}}
-                    <div>
+                    <div class="col s6 l4">
                         <h4>{{this.name}}</h4>
-                        <p><img src="{{this.photo}}" style="width:200px"></p>
+                        <img class="responsive-image" src="{{this.photo}}" style="width:150px">
                     </div>
                     {{/each}}
                 </div>
